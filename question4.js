@@ -7,12 +7,17 @@ return the entire array with the converted strings
 */
 const snakeCaseArr = function (arr) {
     
+    //loop through the array
     for(i = 0; i < arr.length; i++) {
+        //make the case of each element of the array into lower case
         arr[i] = arr[i].toLowerCase();
+        //create a new array for each of the element of the greater array
         let word = arr[i].split(' ');
+        //assign the new array as a string joined with '_' to the element of the greater array;
         arr[i] = word.join('_');
     }
 
+    //return the modified array
     return arr;
 }
 

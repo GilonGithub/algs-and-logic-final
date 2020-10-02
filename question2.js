@@ -6,13 +6,18 @@
 
 const addSAnd20 = function (arr) {
 
+    //loop through the contents of the array
     for(i = 0; i < arr.length; i++) {
+        //validate whether the element is a string or not
         if(typeof(arr[i]) === "string") {
+            //add s for every string element
             arr[i] = arr[i].concat('s');
         } else {
+            //add 20 for non-string element
             arr[i] += 20;
         }
     }
+    //return the array
     return arr;
 }
 
